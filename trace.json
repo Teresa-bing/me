@@ -16,11 +16,11 @@
         "name": "Exercise1: Print 'Hello world!'"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Lab book entry completed"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Update your aboutMe.yml"
       },
       {
@@ -36,11 +36,11 @@
         "name": "You've forked the me repo"
       },
       {
-        "value": 1,
+        "value": 0,
         "name": "You've pushed your work to GitHub: requestsWorking.txt"
       },
       {
-        "value": 1,
+        "value": 0,
         "name": "You've pushed your work to GitHub: checkID.json"
       },
       {
