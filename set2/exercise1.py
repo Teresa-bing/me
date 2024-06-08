@@ -18,17 +18,17 @@ import platform
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
 some_words = ["what", "does", "this", "line", "do", "?"]
-
+# I think this will print for word in some_words by calling the print function.
 for word in some_words:
-    print(word)
-
+    print(word)# it printed "what" "this" "does" "line" "do" "?"
+# I think this will print x in some_words by calling the print function.
 for x in some_words:
-    print(x)
-
-print(some_words)
-
+    print(x)# it printed "what does this x line do ?"
+# I think this is will printed some_word by calling the print function.
+print(some_words) # It printed "what does this line do?"
+# If the number of the item less than 3 by calling the print function.
 if len(some_words) > 3:
-    print("some_words contains more than 3 words")
+    print("some_words contains more than 3 words") # it printed "some_words contains more than 3 words"
 
 
 def usefulFunction():
