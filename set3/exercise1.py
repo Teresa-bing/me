@@ -18,12 +18,12 @@ def loop_ranger(start, stop=None, step=1):
     with just the range function, but we'd like you to do it the long way.
     """
     result=[]
-    current = start 
-    while current< stop:
+    current = start
+    while current < stop:
         result.append (current)
-        current+=step
+        current += step
     return result
-    
+
 
 
 def two_step_ranger(start, stop):
@@ -34,13 +34,12 @@ def two_step_ranger(start, stop):
 
     You can either reuse loop_ranger, or the range function that in the standard library
     """
-    result=[]
-    current=start
-    while current < stop:
-        result.append(current)
-        current +=2
-    return result
-
+    number=[]
+    current= start
+    while current<stop:
+        number.append(current)
+        current+=2
+    return number
 
 def stubborn_asker(low, high):
     """Ask for a number between low and high until actually given one.
@@ -50,18 +49,25 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
-    number=
-    return None
+    while True:
+        try: 
+            user=int(input(f"please input the number between {low} and {high}:"))
+            if low <= user <= high:
+                return user
+            else: 
+                print (f"number not in range {low} and {high}. Try again.")
+        except ValueError:
+            print (f"This is not a valid number.")
 
 
 def not_number_rejector(message):
-    """Ask for a number repeatedly until actually given one.
+        """Ask for a number repeatedly until actually given one.
 
-    Ask for a number, and if the response is actually NOT a number
-    (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
-    When you do get a number, return it.
+        Ask for a number, and if the response is actually NOT a number
+        (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
+        When you do get a number, return it.
     """
-    return None
+    
 
 
 def super_asker(low, high):
@@ -70,6 +76,7 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
+    
     return None
 
 
