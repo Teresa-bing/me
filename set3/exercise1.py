@@ -67,7 +67,16 @@ def not_number_rejector(message):
         (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
         When you do get a number, return it.
     """
-    
+    while True:
+        user=input(f"please enter the number:")
+        try: 
+            number=int(user)
+        if user==number:
+            return user
+        else:
+            print(f"This is a valid number.")
+
+     
 
 
 def super_asker(low, high):

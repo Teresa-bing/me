@@ -39,12 +39,14 @@ def fix_it(moves=True, should_move=True):
     Most people write this function with 4 return statements.
     As an extra challenge, see if you can get that down to three.
     """
-    if moves and not should_move:
-        return "WD-40"
-    elif not moves and should_move:
-        return "Duct Tape"
-    else:
+    if moves and should_move:
         return "No Problem"
+    elif moves and not should_move:
+        return "Duct Tape"
+    elif not moves and not should_move:
+        return "No Problem"
+    elif not moves and should_move:
+        return "WD-40"
 
 
 def loops_preview():
@@ -186,8 +188,9 @@ def loops_4():
     for i in range (10):
         row = []
     for j in range (10):
-        row.append (j)
+        row.append (str(j))
         number.append (row)
+    print(number)
     return number
 
 
@@ -221,9 +224,12 @@ def loops_5():
     number_square = []
     for i in range (10):
         row = []
-        for j in range (10):
-            number_square.append ("(i" + str(i) + ",j" + str(j) + ")")  
+        for j in range (5):
+            row.append ("(i{}, j{})".format(i,j))
+        number_square.append(row)
+    print(number_square)
     return number_square
+
 
 def loops_6():
     """Make a wedge of numbers.
@@ -246,10 +252,10 @@ def loops_6():
     TIP: look out for the starting condition.
     """
     list = []
-    for i in range (10):
+    for i in range (1,11):
         row = []
         for j in range (i):
-            row.append (j)
+            row.append (str(j))
         list.append (row)
     return list
 
@@ -278,8 +284,9 @@ def loops_7():
     rows = 5
     def pyramid ():
         for i in range (1,rows+1):
-            print (" " * (rows - i) + "*" * (2*i-1) + " " * (rows - i))
-    pyramid
+            pyramid (" " * (rows - i) + "*" * (2*i-1) + " " * (rows - i))
+    print
+    
 
 
 if __name__ == "__main__":
