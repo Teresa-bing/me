@@ -281,11 +281,14 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    rows = 5
-    def pyramid ():
-        for i in range (1,rows+1):
-            pyramid (" " * (rows - i) + "*" * (2*i-1) + " " * (rows - i))
-    print
+    sign=[]
+    star=["*"]
+    space=[" "]
+    for i in range (5):
+        row = space * (4-i) + star * (2*i+1) + space *(4-i)
+        sign.append(row)
+    return sign
+    
     
 
 
