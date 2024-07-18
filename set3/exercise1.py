@@ -69,7 +69,13 @@ def not_number_rejector(message):
     """
         while True:
             user=input(f"please enter the number:")
-            
+            try:
+                number=float(user)
+                print(f"You enter the number {number}")
+                return number
+            except ValueError:
+                print(f"That's not a valid nummber, please try again.")
+        
 
      
 
@@ -80,8 +86,18 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
-    
-    return None
+    while True:
+        try: 
+            message=input(f"please enter the number:")
+            number=float(message)
+            print(f"YOu enter thr numbrt {number}")
+            user=int(input(f"please input the number between {low} and {high}:"))
+            if low <= user <= high:
+                return user
+            else: 
+                print (f"number not in range {low} and {high}. Try again.")
+        except ValueError:
+                print(f"That's not a valid nummber, please try again.")
 
 
 if __name__ == "__main__":
