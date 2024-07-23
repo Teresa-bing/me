@@ -40,7 +40,10 @@ def get_some_details():
     json_data = open(LOCAL + "/lazyduck.json").read()
 
     data = json.loads(json_data)
-    return {"lastName": data["results"][0]["name"]["last"], "password":data["results"][0]["login"]["password"], "postcodePlusID": data["results"][0]["location"]["postcode"]}
+    lastname = data["results"][0]["name"]["last"]
+    password = data["results"][0]["login"]["password"]
+    postcode = data["results"][0]["location"]["postcode"]
+    return {"lastName": lastname, "password":password, "postcodePlusID": postcode}
 
 
 def wordy_pyramid():
