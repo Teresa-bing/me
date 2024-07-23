@@ -90,7 +90,7 @@ def super_asker(low, high):
         try: 
             message=input(f"please enter the number:")
             number=float(message)
-            print(f"YOu enter thr numbrt {number}")
+            print(f"You enter the number {number}")
             user=int(input(f"please input the number between {low} and {high}:"))
             if low <= user <= high:
                 return user
