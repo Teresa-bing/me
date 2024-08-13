@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week, I still trying to see the data that I want to find. I have serached many data, but I think that I do not need to focus on one country to fine the data. And then I think that I can make the data in the whole world. The music event is very popular in the world, because it is a famous enterteiment way to release pressure.So I found the data about the revenue form music events in 2017 to 2028.
