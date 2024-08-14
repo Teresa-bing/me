@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Keep going on my data project. This week, I make many bar chart and I wanted to make a map in panda. But I meet a problem is that in my website, it does not have any image or link can help me to do the data. I also research on the website about how to draw a map on python, they all give me the answer is fread file. Then I give up this idea, because if I use this map, maybe it can not showing the data clearly, maybe cangiing another way to show the data.
